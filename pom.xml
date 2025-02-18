@@ -11,7 +11,7 @@
 
     <name>RoseUtils</name>
 
-    <description>Core plugin for beta 1.7.3</description>
+    <description>Core plugin for beta 1.7</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
