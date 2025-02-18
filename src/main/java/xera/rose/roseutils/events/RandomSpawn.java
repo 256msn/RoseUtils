@@ -27,8 +27,8 @@ public class RandomSpawn extends PlayerListener {
         Location randomLocation = new Location(world, 0.0D, 0.0D, 0.0D);
 
         do {
-            int x = 1250 + (int)(Math.random() * 1250.0D);
-            int z = 1250 + (int)(Math.random() * 1250.0D);
+            int x = 550 + (int)(Math.random() * 550.0D);
+            int z = 550 + (int)(Math.random() * 550.0D);
             Location location = new Location(world, Double.parseDouble(Integer.toString(x)), 0.0D, Double.parseDouble(Integer.toString(z)));
             Chunk chunk = world.getChunkAt(location);
             if (!world.isChunkLoaded(chunk)) {
