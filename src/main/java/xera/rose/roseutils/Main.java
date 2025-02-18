@@ -1,5 +1,6 @@
 package xera.rose.roseutils;
 
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.java.JavaPlugin;
 import xera.rose.roseutils.commands.GiveCommand;
@@ -12,6 +13,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        System.out.println("[RoseUtils] Enabled.");
         PlayerJoin playerJoin = new PlayerJoin();
         PlayerQuit playerQuit = new PlayerQuit();
         getCommand("give").setExecutor(new GiveCommand());
@@ -23,6 +25,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
+        System.out.println("[RoseUtils] Disabled.");
         // Plugin shutdown logic
     }
 }

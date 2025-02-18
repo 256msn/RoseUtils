@@ -27,6 +27,7 @@ public class BlockPlace extends BlockListener {
             case BEDROCK:
             case PORTAL:
             case SAND:
+            case REDSTONE:
                 return true;
         }
         return false;

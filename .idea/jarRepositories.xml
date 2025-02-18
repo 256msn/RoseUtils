@@ -9,6 +9,11 @@
     <remote-repository>
       <option name="id" value="bukkit" />
       <option name="name" value="bukkit" />
+      <option name="url" value="$PROJECT_DIR$/lib/Bukkit.jar" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="bukkit" />
+      <option name="name" value="bukkit" />
       <option name="url" value="$PROJECT_DIR$/lib/Bukkit-API.jar" />
     </remote-repository>
     <remote-repository>
