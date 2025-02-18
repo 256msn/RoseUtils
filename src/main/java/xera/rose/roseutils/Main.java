@@ -14,10 +14,10 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         PlayerJoin playerJoin = new PlayerJoin();
         PlayerQuit playerQuit = new PlayerQuit();
-       getCommand("give").setExecutor(new GiveCommand());
-       getServer().getPluginManager().registerEvent(Event.Type.PLAYER_JOIN, playerJoin, Event.Priority.Normal, this);
-       getServer().getPluginManager().registerEvent(Event.Type.PLAYER_QUIT, playerQuit, Event.Priority.Normal, this);
-       getServer().getPluginManager().registerEvent(Event.Type.BLOCK_PLACE, new BlockPlace(), Event.Priority.Normal, this);
+        getCommand("give").setExecutor(new GiveCommand());
+        getServer().getPluginManager().registerEvent(Event.Type.PLAYER_JOIN, playerJoin, Event.Priority.Normal, this);
+        getServer().getPluginManager().registerEvent(Event.Type.PLAYER_QUIT, playerQuit, Event.Priority.Normal, this);
+        getServer().getPluginManager().registerEvent(Event.Type.BLOCK_PLACE, new BlockPlace(), Event.Priority.Normal, this);
         getServer().getPluginManager().registerEvent(Event.Type.PLAYER_RESPAWN, new RandomSpawn(), Event.Priority.Highest, this);
     }
 
