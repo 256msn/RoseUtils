@@ -1,0 +1,14 @@
+name: RoseUtils
+version: 1.1-SNAPSHOT
+main: xera.rose.roseutils.Main
+prefix: RoseUtils
+authors: [ 256msn ]
+description: Core plugin for beta 1.7.3
+website: http://www.2b2t.rf.gd
+commands:
+  give:
+    description: Give the spesified player an item
+    usage: /give <player> <item> [amount]
+  kit:
+    description: Give items to the player
+    usage: /kit <kit>
