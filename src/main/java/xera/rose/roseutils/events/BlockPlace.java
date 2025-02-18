@@ -26,7 +26,6 @@ public class BlockPlace extends BlockListener {
         switch (material) {
             case BEDROCK:
             case PORTAL:
-            case SAND:
             case REDSTONE:
                 return true;
         }
