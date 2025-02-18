@@ -3,7 +3,7 @@ version: ${project.version}
 main: xera.rose.roseutils.Main
 prefix: RoseUtils
 authors: [ 256msn ]
-description: Core plugin for beta 1.7
+description: Core plugin for beta 1.7.3
 website: http://www.2b2t.rf.gd
 commands:
   give:
