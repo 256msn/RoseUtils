@@ -57,10 +57,10 @@ public class GiveCommand implements CommandExecutor {
 
                 sender.sendMessage("Gave " + player.getName() + " some " + material.getId() + " (" + material + ")");
             } else {
-                sender.sendMessage("There's no item called " + args[1]);
+                sender.sendMessage("There's no item called. " + args[1]);
             }
         } else {
-            sender.sendMessage("Can't find player " + args[0]);
+            sender.sendMessage("Can't find player. " + args[0]);
         }
 
         return true;
