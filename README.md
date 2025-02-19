@@ -1,5 +1,5 @@
 # 🌹 RoseUtils 1.7.3
-A utility mod for Minecraft Beta 1.7.3
+A utility anarchy plugin for Minecraft Beta 1.7.3
 
 ---
 
