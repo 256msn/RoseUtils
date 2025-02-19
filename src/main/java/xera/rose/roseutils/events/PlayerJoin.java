@@ -7,6 +7,6 @@ import org.bukkit.event.player.PlayerListener;
 public class PlayerJoin extends PlayerListener {
     @Override
     public void onPlayerJoin(PlayerJoinEvent event) {
-        event.setJoinMessage(ChatColor.GRAY + event.getPlayer().getName() + " Has joined hell and now he cannot escape.");
+        event.setJoinMessage(ChatColor.DARK_RED + event.getPlayer().getName() + " Has joined the hell.");
     }
 }

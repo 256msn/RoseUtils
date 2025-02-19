@@ -12,6 +12,3 @@ commands:
   kit:
     description: Give items to the player
     usage: /kit <kit>
-  kill:
-    description: fasfdgfdgfdh
-    usage: /kill

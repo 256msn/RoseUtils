@@ -1,5 +1,6 @@
 package xera.rose.roseutils;
 
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.java.JavaPlugin;
 import xera.rose.roseutils.commands.GiveCommand;
@@ -9,13 +10,6 @@ import xera.rose.roseutils.events.PlayerQuit;
 import xera.rose.roseutils.events.RandomSpawn;
 
 public final class Main extends JavaPlugin {
-
-    public static Main instance;
-
-    @Override
-    public void onLoad(){
-        instance = this;
-    }
 
     @Override
     public void onEnable() {
