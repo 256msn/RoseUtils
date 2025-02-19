@@ -25,8 +25,6 @@ public class BlockPlace extends BlockListener {
     private boolean isChecked(Material material) {
         switch (material) {
             case BEDROCK:
-            case PORTAL:
-            case REDSTONE:
                 return true;
         }
         return false;
