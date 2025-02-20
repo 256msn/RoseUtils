@@ -1,7 +1,5 @@
 package xera.rose.roseutils;
 
-import org.bukkit.Bukkit;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.event.Event;
 import org.bukkit.plugin.java.JavaPlugin;
 import xera.rose.roseutils.commands.GiveCommand;
@@ -9,8 +7,6 @@ import xera.rose.roseutils.events.BlockPlace;
 import xera.rose.roseutils.events.PlayerJoin;
 import xera.rose.roseutils.events.PlayerQuit;
 import xera.rose.roseutils.events.RandomSpawn;
-
-import java.util.logging.Logger;
 
 public final class Main extends JavaPlugin {
 
@@ -26,7 +22,7 @@ public final class Main extends JavaPlugin {
         System.out.println("[RoseUtils] Enabled.");
         PlayerJoin playerJoin = new PlayerJoin();
         PlayerQuit playerQuit = new PlayerQuit();
-        getCommand("give").setExecutor(new GiveCommand());
+        new GiveCommand();
         getServer().getPluginManager().registerEvent(Event.Type.PLAYER_JOIN, playerJoin, Event.Priority.Normal, this);
         getServer().getPluginManager().registerEvent(Event.Type.PLAYER_QUIT, playerQuit, Event.Priority.Normal, this);
         getServer().getPluginManager().registerEvent(Event.Type.BLOCK_PLACE, new BlockPlace(), Event.Priority.Normal, this);
