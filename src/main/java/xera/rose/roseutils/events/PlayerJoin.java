@@ -7,6 +7,6 @@ import org.bukkit.event.player.PlayerListener;
 public class PlayerJoin extends PlayerListener {
     @Override
     public void onPlayerJoin(PlayerJoinEvent event) {
-        event.setJoinMessage(ChatColor.DARK_RED + event.getPlayer().getName() + " Has joined the hell.");
+        event.setJoinMessage(ChatColor.DARK_RED + event.getPlayer().getName() + " has joined the Hell, welcome to the Hotel California.");
     }
 }

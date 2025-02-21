@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 
-public class GiveCommand extends BaseCommand {
+public class GiveCommand implements CommandExecutor {
     static {
         ArrayList<String> materialList = new ArrayList<>();
         for (Material material : Material.values()) {
@@ -21,16 +21,11 @@ public class GiveCommand extends BaseCommand {
         }
         Collections.sort(materialList);
     }
-
-    public GiveCommand() {
-        super("give");
-    }
-
     @Override
-    public void execute(CommandSender sender, String[] args) {
+    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if ((args.length < 2)) {
             sender.sendMessage(ChatColor.RED + "Usage: " + "/give <player> <item> [amount [data]]");
-            return;
+            return true;
         }
 
         Player player = Bukkit.getServer().getPlayer(args[0]);
@@ -62,10 +57,12 @@ public class GiveCommand extends BaseCommand {
 
                 sender.sendMessage("Gave " + player.getName() + " some " + material.getId() + " (" + material + ")");
             } else {
-                sender.sendMessage(ChatColor.RED + "There's no item called. " + args[1]);
+                sender.sendMessage("There's no item called. " + args[1]);
             }
         } else {
-            sender.sendMessage(ChatColor.RED + "Can't find player. " + args[0]);
+            sender.sendMessage("Can't find player. " + args[0]);
         }
+
+        return true;
     }
 }
