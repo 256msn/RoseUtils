@@ -9,6 +9,3 @@ commands:
   give:
     description: Give the spesified player an item
     usage: /give <player> <item> [amount]
-  kit:
-    description: Give items to the player
-    usage: /kit <kit>
